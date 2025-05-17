@@ -128,3 +128,64 @@ body, html {
     opacity: 1;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+    .table {
+      display: grid;
+      grid-template-columns: repeat(18, 60px);
+      grid-auto-rows: 80px;
+      gap: 4px;
+      justify-content: center;
+      padding: 20px;
+    }
+    .element {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #ffffff;
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+      padding: 2px;
+    }
+    .element .number {
+      position: absolute;
+      top: 2px;
+      left: 4px;
+      font-size: 11px;
+      color: #444;
+    }
+    .element .symbol {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .element .detail {
+      font-size: 10px;
+      color: #333;
+    }
+    .alkali       { background: #FF6666; }
+    .alkaline     { background: #FFDEAD; }
+    .transition   { background: #FFD700; }
+    .post-transition { background: #C0C0C0; }
+    .metalloid    { background: #ADFF2F; }
+    .nonmetal     { background: #7FFFD4; }
+    .halogen      { background: #FFA07A; }
+    .noble-gas    { background: #DDA0DD; }
+    .lanthanide   { background: #E6E6FA; }
+    .actinide     { background: #F5DEB3; }
+    .empty        { background: transparent; border: none; cursor: default; }
