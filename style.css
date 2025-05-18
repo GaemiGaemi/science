@@ -222,4 +222,8 @@ body, html {
   .element .number {
     display: none;
   }
+  .hero {
+    overflow:hidden;
+  }
+
 }
