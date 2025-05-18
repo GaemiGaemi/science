@@ -153,8 +153,8 @@ body, html {
       margin: 0 auto;
      width: 100%;
       display: grid;
-      grid-template-columns: repeat(18, minmax(50px, 1fr)); /* 최소 크기 보장 */
-      grid-auto-rows: minmax(60px, auto); /* 내부 내용에 따라 유동적 */
+      grid-template-columns: repeat(18, minmax(30px, 1fr)); /* 최소 크기 보장 */
+      grid-auto-rows: minmax(36px, auto); /* 내부 내용에 따라 유동적 */
      gap: 4px;
      padding: 10px;
     }
