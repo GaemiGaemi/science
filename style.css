@@ -42,7 +42,6 @@ body, html {
 
 /* ✅ 2번칸 (중간) */
 .middle, .third {
-  position: relative;
   margin: 0 200px;
   padding: 100px 20px;
 }
