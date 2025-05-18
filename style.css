@@ -151,29 +151,28 @@ body, html {
     .table {
       max-width: 1200px;
       margin: 0 auto;
-      width: 100%;
+     width: 100%;
       display: grid;
-      grid-template-columns: repeat(18, minmax(40px, 1fr));
-      grid-auto-rows: 6vw;
-      aspect-ratio: 18 / 1; /* 가로 길이에 따라 비례 유지 */
-      gap: 4px;
-      padding: 10px;
+      grid-template-columns: repeat(18, minmax(50px, 1fr)); /* 최소 크기 보장 */
+      grid-auto-rows: minmax(60px, auto); /* 내부 내용에 따라 유동적 */
+     gap: 4px;
+     padding: 10px;
     }
     .element {
-      aspect-ratio: 1 / 1.2; /* 셀마다 세로가 가로보다 1.2배 */
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background: #ffffff;
-      cursor: pointer;
-      text-decoration: none;
+     /* aspect-ratio 제거!! 비율 강제하지 않음 */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-size: 14px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     background: #ffffff;
+     cursor: pointer;
+     text-decoration: none;
       color: black;
-      padding: 2px;
+     padding: 4px;
+      overflow: hidden;
     }
     .element .number {
       position: absolute;
