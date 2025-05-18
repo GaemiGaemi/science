@@ -174,7 +174,7 @@ body, html {
       padding: 4px;
       overflow: hidden;
     }
-    
+
     .element .number {
       position: absolute;
       top: 2px;
@@ -205,10 +205,18 @@ body, html {
 
 
 
-  @media (min-width: 1200px)
-  {
+@media (min-width: 1200px)
+{
   .table
-    {
-    grid-auto-rows: calc(1200px / 18 * 1.2);
-    }
+  {
+  grid-auto-rows: calc(1200px / 18 * 1.2);
   }
+}
+
+
+/* 작은 화면일 때 정보 간소화 */
+@media (max-width: 600px) {
+  .element .detail {
+    display: none;
+  }
+}
