@@ -148,16 +148,17 @@ body, html {
 
 
 
-    .table {
-      max-width: 1200px;
-      margin: 0 auto;
-     width: 100%;
-      display: grid;
-      grid-template-columns: repeat(18, minmax(30px, 1fr)); /* 최소 크기 보장 */
-      grid-auto-rows: minmax(36px, auto); /* 내부 내용에 따라 유동적 */
-     gap: 4px;
-     padding: 10px;
+   .table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);         /* 18칸 유지 */
+    grid-auto-rows: calc(100vw / 18 * 1.2);         /* 칸 하나의 높이 → 가로에 비례 */
+    gap: 4px;
+    padding: 10px;
     }
+    
     .element {
      /* aspect-ratio 제거!! 비율 강제하지 않음 */
      display: flex;
