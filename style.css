@@ -219,4 +219,7 @@ body, html {
   .element .detail {
     display: none;
   }
+  .element .number {
+    display: none;
+  }
 }
