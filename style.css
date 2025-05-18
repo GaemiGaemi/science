@@ -223,4 +223,8 @@ body, html {
   .element .number {
     display: none;
   }
+  .element {
+    aspect-ratio: auto;
+    height: 70px;
+  }
 }
