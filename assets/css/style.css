@@ -47,7 +47,7 @@ body, html {
   justify-content: center;
 }
 .middle {
-  margin-top: 2dvh;
+  margin-top: 100dvh;
   background: rgb(255, 226, 207);
 }
 .third {
