@@ -7,16 +7,16 @@ floating_ad: true
     <section class="section middle"> <!--second box-->    
       <h1>원소 주기율표 (TEST)</h1>
       <div class="table">
-        {% for element in site.data.elements %}
+        {% for element in site.elements %}
         <div class="element {{ element.group }}"
-         style="grid-column: {{ element.col }}; grid-row: {{ element.row }};">
-        {% if element.symbol %}
-        <span class="number">{{ element.number }}</span>
-        <span class="symbol">{{ element.symbol }}</span>
-        <span class="detail">{{ element.weight }}</span>
-        {% endif %}
-        </div>
-        {% endfor %}
+             style="grid-column: {{ element.col }}; grid-row: {{ element.row }};">
+         {% if element.symbol %}
+         <span class="number">{{ element.number }}</span>
+         <span class="symbol">{{ element.symbol }}</span>
+         <span class="detail">{{ element.weight }}</span>
+         {% endif %}
+         </div>
+         {% endfor %}
       </div> <!--원소기호 끝-->
     </section> 
   
