@@ -7,60 +7,17 @@ floating_ad: true
     <section class="section middle"> <!--second box-->    
       <h1>원소 주기율표 (TEST)</h1>
       <div class="table">
-        <a href="elements/H.md" class="element alkali" style="grid-column: 1; grid-row: 1;">
-          <span class="number">1</span>
-          <span class="symbol">H</span>
-          <span class="detail">1.008</span>
-        </a>
-      <div class="empty" style="grid-column: 2 / span 16;"></div>
-        <a href="elements/He.md" class="element noble-gas" style="grid-column: 18; grid-row: 1;">
-          <span class="number">2</span>
-          <span class="symbol">He</span>
-          <span class="detail">4.0026</span>
-        </a>
-    <a href="elements/Li.md" class="element alkali" style="grid-column: 1; grid-row: 2;">
-      <span class="number">3</span>
-      <span class="symbol">Li</span>
-      <span class="detail">6.94</span>
-    </a>
-    <a href="elements/Be.md" class="element alkaline" style="grid-column: 2; grid-row: 2;">
-      <span class="number">4</span>
-      <span class="symbol">Be</span>
-      <span class="detail">9.0122</span>
-    </a>
-    <div class="empty" style="grid-column: 3 / span 10; grid-row: 2;"></div>
-    <a href="elements/B.md" class="element metalloid" style="grid-column: 13; grid-row: 2;">
-      <span class="number">5</span>
-      <span class="symbol">B</span>
-      <span class="detail">10.81</span>
-    </a>
-    <a href="elements/C.md" class="element nonmetal" style="grid-column: 14; grid-row: 2;">
-      <span class="number">6</span>
-      <span class="symbol">C</span>
-      <span class="detail">12.01</span>
-    </a>
-    <a href="elements/N.md" class="element nonmetal" style="grid-column: 15; grid-row: 2;">
-      <span class="number">7</span>
-      <span class="symbol">N</span>
-      <span class="detail">14.01</span>
-    </a>
-    <a href="elements/O.md" class="element nonmetal" style="grid-column: 16; grid-row: 2;">
-      <span class="number">8</span>
-      <span class="symbol">O</span>
-      <span class="detail">16.00</span>
-    </a>
-    <a href="elements/F.md" class="element halogen" style="grid-column: 17; grid-row: 2;">
-      <span class="number">9</span>
-      <span class="symbol">F</span>
-      <span class="detail">19.00</span>
-    </a>
-    <a href="elements/Ne.md" class="element noble-gas" style="grid-column: 18; grid-row: 2;">
-      <span class="number">10</span>
-      <span class="symbol">Ne</span>
-      <span class="detail">20.18</span>
-    </a>
-    <!-- 나머지 원소들도 위와 같은 구조로 추가 가능 -->
-  </div> <!--원소기호 끝-->
+        {% for element in site.data.elements %}
+        <div class="element {{ element.group }}"
+         style="grid-column: {{ element.col }}; grid-row: {{ element.row }};">
+        {% if element.symbol %}
+        <span class="number">{{ element.number }}</span>
+        <span class="symbol">{{ element.symbol }}</span>
+        <span class="detail">{{ element.weight }}</span>
+        {% endif %}
+        </div>
+        {% endfor %}
+      </div> <!--원소기호 끝-->
     </section> 
   
     <!-- 메뉴 버튼 -->
