@@ -1,31 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const hero = document.querySelector('.hero');
-  const heroImg = document.querySelector('.hero img');
-  const middle = document.querySelector('.middle');
 
-  const collapsedHeight = 80;
-
-  const updateHero = () => {
-    if (window.scrollY > 10) {
-      hero.style.height = `${collapsedHeight}px`;
-      heroImg.style.transform = 'scale(0.5)';
-      middle.style.marginTop = `${collapsedHeight}px`;
-    } else {
-      const fullHeight = window.innerHeight;
-      hero.style.height = `${fullHeight}px`;
-      heroImg.style.transform = 'scale(1)';
-      middle.style.marginTop = `${fullHeight}px`;
-    }
-  };
-
-  updateHero();
-  window.addEventListener('scroll', updateHero);
-  window.addEventListener('resize', updateHero);
-});
-
-
-
-/*
 document.addEventListener('DOMContentLoaded', () => {
   const hero = document.querySelector('.hero');
   const heroImg = document.querySelector('.hero img');
@@ -51,7 +24,6 @@ const updateMiddleOffset = () => {
   const heroHeight = hero.offsetHeight;
   middle.style.marginTop = `${heroHeight}px`;
 };
-*/
 
 
 document.addEventListener("DOMContentLoaded", () => {
