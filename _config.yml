@@ -1,23 +1,19 @@
 collections:
-  elements:
+  default:
     output: true
-    permalink: /elements/:title/
-    directory: "_elements"  
+
+  elements:
+  permalink: /elements/:title/
+  directory: "_elements"  
 
 
 title: GeamiGeami Science
-#email: your-email@example.com
 description: Science Page
 
-url: "https://gaemigaemi.github.io/science/" # the base hostname & protocol for your site, e.g. http://example.com
-#baseurl: "" # the subpath of your site, e.g. /blog
-#twitter_username: jekyllrb
-#github_username:  jekyll
+
+url: "https://gaemigaemi.github.io/science/" 
 
 
-
-# Build settings
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
