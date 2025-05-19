@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateHeroHeight);
 });
 
+const updateMiddleOffset = () => {
+  const middle = document.querySelector('.middle');
+  const heroHeight = hero.offsetHeight;
+  middle.style.marginTop = `${heroHeight}px`;
+};
 
 
 
@@ -34,7 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
     menu.style.display = "none";
   });
 
-  // 오버레이 바깥 클릭하면 닫기
+
+// 오버레이 바깥 클릭하면 닫기
   menu.addEventListener("click", (e) => {
     if (e.target === menu) {
       menu.style.display = "none";
