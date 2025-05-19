@@ -48,13 +48,18 @@ body, html {
 }
 .middle {
   margin-top: 100dvh;
-  background: white;
+  background: rgb(255, 226, 207);
 }
 .third {
   background: white;
   height: 1000px;
 }
 
+.footer
+{
+  height: 100px;
+  background-color: #b4b4b4;
+}
 
 .menu-overlay {
   position: fixed;
