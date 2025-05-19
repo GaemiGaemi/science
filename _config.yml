@@ -5,11 +5,13 @@ collections:
     directory: "_elements"  
 
 
+
+
 title: GeamiGeami Science
 description: Science Page
 
 
-url: "https://gaemigaemi.github.io/science/" 
+url: "https://gaemigaemi.github.io/science" 
 
 
 plugins:
