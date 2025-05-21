@@ -1,0 +1,237 @@
+/* ✅ ALL  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  width: 100%;
+}
+
+/* ✅ 1번 칸 */
+.hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.3s ease;
+  z-index: 10;
+  overflow: hidden;
+  background-image: url('/science/assets/img/science_black.png');
+  background-size: cover;  
+}
+.hero img {
+  max-width: 45%;
+  transition: transform 0.3s ease;
+}
+
+/* ✅ 2번칸 (중간) */
+.middle, .third {
+  margin: 0 auto;
+  padding: 3% 1%;
+  justify-content: center;
+}
+.middle {
+  margin-top: 55dvh;
+  background: rgb(230, 230, 230);
+}
+.third {
+  background: rgb(230, 230, 230);
+  height: 1000px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;       /* 화면 하단에 위치 */
+    left: 0;         /* 화면 왼쪽에 위치 */
+    width: 100%;     /* 전체 너비를 차지 */
+    background-color: #333;  /* 배경색 설정 */
+    color: white;    /* 글자색 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    padding: 10px 0; /* 여백 추가 */
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.menu-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+}
+
+
+
+
+
+/* ad */
+.floating-ad {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 180px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 10px;
+  z-index: 9999;
+  text-align: center;
+  font-size: 12px;
+}
+
+.floating-ad img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.ad-disclaimer {
+  font-size: 10px;
+  color: #666;
+  margin-top: 6px;
+  line-height: 1.3;
+}
+
+.ad-close-btn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+  color: #888;
+}
+
+@keyframes floatIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+    .table {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(18, 1fr);
+      grid-auto-rows: calc(100vw / 18 * 1.2);
+      gap: 4px;
+      padding: 10px;
+    }
+
+    .element {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #ffffff;
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+      padding: 4px;
+      overflow: hidden;
+    }
+
+    .element .number {
+      position: absolute;
+      top: 2px;
+      left: 4px;
+      font-size: 11px;
+      color: #444;
+    }
+    .element .symbol {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .element .detail {
+      font-size: 10px;
+      color: #333;
+    }
+    .alkali       { background: #FF6666; }
+    .alkaline     { background: #FFDEAD; }
+    .transition   { background: #FFD700; }
+    .post-transition { background: #C0C0C0; }
+    .metalloid    { background: #ADFF2F; }
+    .nonmetal     { background: #7FFFD4; }
+    .halogen      { background: #FFA07A; }
+    .noble-gas    { background: #DDA0DD; }
+    .lanthanide   { background: #E6E6FA; }
+    .actinide     { background: #F5DEB3; }
+    .empty        { background: transparent; border: none; cursor: default; }
+
+
+
+
+@media (min-width: 1200px)
+{
+  .table
+  {
+  grid-auto-rows: calc(1200px / 18 * 1.2);
+  }
+}
+
+
+/* 작은 화면일 때 정보 간소화 */
+@media (max-width: 600px) {
+  .element .detail {
+    display: none;
+  }
+  .element .number {
+    display: none;
+  }
+}

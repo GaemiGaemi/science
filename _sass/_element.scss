@@ -1,0 +1,21 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;         /* 세로 정렬 */
+  justify-content: center;        /* 세로 가운데 */
+  align-items: center;            /* 가로 가운데 */
+  height: 100vh;                  /* 화면 전체 높이 */
+  gap: 20px;                      /* 칸 사이 간격 */
+}
+
+.element-page {
+  width: 200px;
+  padding: 20px;
+  background: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+}
