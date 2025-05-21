@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html>
   <head>
@@ -8,22 +6,27 @@
   <body>
 
   <div class="container">
+    
+    <header id="Header">
+    <h1>고정 상단 메뉴</h1>
+    </header>
 
-
-
-
-    <section class="element-page">
+    <section class="element-page_1">
       <h1>{{ page.title }} ({{ page.symbol }})</h1>
       <p>원자번호: {{ page.number }}</p>
       <p>원자량: {{ page.weight }}</p>
       <p>전자배치: {{ page.electron }} </p>
+
+    </section>
+    <section class="element-page_2">
+      <h1>2번칸</h1>
       <div class="content">
         {{ content }}
       </div>
     </section>
-
-
-
+    <section class="element-page_3">
+      <h1>3번칸</h1>
+    </section>
 
     <!-- 4번: Footer 영역 -->
     <footer class="footer">
