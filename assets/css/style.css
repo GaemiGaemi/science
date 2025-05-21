@@ -49,10 +49,10 @@ body, html {
 }
 .middle {
   margin-top: 55dvh;
-  background: rgb(150, 150, 150);
+  background: rgb(230, 230, 230);
 }
 .third {
-  background: white;
+  background: rgb(230, 230, 230);
   height: 1000px;
 }
 
