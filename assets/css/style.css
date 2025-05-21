@@ -56,10 +56,15 @@ body, html {
   height: 1000px;
 }
 
-.footer
-{
-  height: 50px;
-  background-color: #b4b4b4;
+.footer {
+    position: fixed;
+    bottom: 0;       /* 화면 하단에 위치 */
+    left: 0;         /* 화면 왼쪽에 위치 */
+    width: 100%;     /* 전체 너비를 차지 */
+    background-color: #333;  /* 배경색 설정 */
+    color: white;    /* 글자색 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    padding: 10px 0; /* 여백 추가 */
 }
 
 .menu-overlay {
