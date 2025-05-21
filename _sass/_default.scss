@@ -20,7 +20,6 @@ body, html {
   width: 100%;
 }
 
-/* ✅ 1번 칸 */
 .hero {
   position: fixed;
   top: 0;
@@ -41,10 +40,10 @@ body, html {
   transition: transform 0.3s ease;
 }
 
-/* ✅ 2번칸 (중간) */
 .middle, .third {
   margin: 0 auto;
   padding: 3% 1%;
+  text-align: center; 
   justify-content: center;
 }
 .middle {
@@ -53,12 +52,11 @@ body, html {
 }
 .third {
   background: rgb(230, 230, 230);
-  height: 100dvh;
-  padding-bottom: 50px;
+  height: 2000px;
+  margin-bottom: 50px;
 }
 
 .footer {
-    position: fixed;
     bottom: 0;       /* 화면 하단에 위치 */
     left: 0;         /* 화면 왼쪽에 위치 */
     width: 100%;     /* 전체 너비를 차지 */
@@ -68,101 +66,59 @@ body, html {
     padding: 10px 0; /* 여백 추가 */
 }
 
-.menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
+
+.table {
+  max-width: 1200px;
   width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.7);
-  display: none;
-  justify-content: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-auto-rows: calc(100vw / 18 * 1.2);
+  gap: 4px;
+  padding: 10px;
+}
+.element {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  z-index: 1000;
-}
-
-.menu-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.menu-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1100;
+  justify-content: center;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #ffffff;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
+  padding: 4px;
+  overflow: hidden;
 }
-.menu-btn i {
-  font-size: 24px;
-  color:#E6E6FA;
-  transition: color 0.3s ease; 
+.element .number {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  font-size: 11px;
+  color: #444;
 }
-  
-.menu-btn:hover i {
-  color: rgb(255, 134, 134);
+.element .symbol {
+  font-weight: bold;
+  font-size: 16px;
 }
-
-
-
-
-
-    .table {
-      max-width: 1200px;
-      width: 100%;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(18, 1fr);
-      grid-auto-rows: calc(100vw / 18 * 1.2);
-      gap: 4px;
-      padding: 10px;
-    }
-
-    .element {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background: #ffffff;
-      cursor: pointer;
-      text-decoration: none;
-      color: black;
-      padding: 4px;
-      overflow: hidden;
-    }
-
-    .element .number {
-      position: absolute;
-      top: 2px;
-      left: 4px;
-      font-size: 11px;
-      color: #444;
-    }
-    .element .symbol {
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .element .detail {
-      font-size: 10px;
-      color: #333;
-    }
-    .alkali       { background: #FF6666; }
-    .alkaline     { background: #FFDEAD; }
-    .transition   { background: #FFD700; }
-    .post-transition { background: #C0C0C0; }
-    .metalloid    { background: #ADFF2F; }
-    .nonmetal     { background: #7FFFD4; }
-    .halogen      { background: #FFA07A; }
-    .noble-gas    { background: #DDA0DD; }
-    .lanthanide   { background: #E6E6FA; }
-    .actinide     { background: #F5DEB3; }
-    .empty        { background: transparent; border: none; cursor: default; }
+.element .detail {
+  font-size: 10px;
+  color: #333;
+}
+.alkali       { background: #FF6666; }
+.alkaline     { background: #FFDEAD; }
+.transition   { background: #FFD700; }
+.post-transition { background: #C0C0C0; }
+.metalloid    { background: #ADFF2F; }
+.nonmetal     { background: #7FFFD4; }
+.halogen      { background: #FFA07A; }
+.noble-gas    { background: #DDA0DD; }
+.lanthanide   { background: #E6E6FA; }
+.actinide     { background: #F5DEB3; }
+.empty        { background: transparent; border: none; cursor: default; }
 
 
 
