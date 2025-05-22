@@ -19,10 +19,29 @@
 }
 
 
-.element-page {
+.element-page1 {
   position:relative;
   width: 300px;
-  height:1000px;
+  height:500px;
+  margin-top:200px;
+  padding: 20px;
+  background: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.element-page2 {
+  position:relative;
+  width: 500px;
+  height:500px;
+  padding: 20px;
+  background: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.element-page3 {
+  position:relative;
+  width: 500px;
+  height:500px;
   padding: 20px;
   background: #eee;
   border: 1px solid #ccc;
